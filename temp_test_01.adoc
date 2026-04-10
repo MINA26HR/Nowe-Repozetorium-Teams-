@@ -1,0 +1,187 @@
+= 🚀 Mój Projekt PRO
+:author: Twoje Imię
+:revdate: 2026-04-10
+:toc: left
+:toclevels: 3
+:icons: font
+:source-highlighter: highlight.js
+:experimental:
+
+[.text-center]
+*🔥 Nowoczesny starter projektu z dokumentacją w AsciiDoc*
+
+== 📊 Status
+
+[cols="1,2", frame=none, grid=none]
+|===
+| 🔧 Wersja:
+| 1.0.0
+
+| 🟢 Status:
+| W trakcie rozwoju
+
+| 📅 Ostatnia aktualizacja:
+| {revdate}
+|===
+
+== 📸 Podgląd
+
+image::https://via.placeholder.com/900x400.png?text=PRO+Preview[Preview, align=center]
+
+== ✨ Najważniejsze funkcje
+
+[%collapsible]
+====
+* ✅ Modularna architektura
+* ⚡ Bardzo szybkie działanie
+* 🔒 Bezpieczeństwo
+* 🎨 Łatwe customizowanie UI
+====
+
+== 🏗️ Architektura
+
+[plantuml, format=svg]
+----
+@startuml
+package "Frontend" {
+  [React App]
+}
+
+package "Backend" {
+  [API Server]
+}
+
+database "DB" {
+  [PostgreSQL]
+}
+
+[React App] --> [API Server]
+[API Server] --> [PostgreSQL]
+@enduml
+----
+
+== 📂 Struktura projektu
+
+....
+📦 project
+ ┣ 📂 src
+ ┃ ┣ 📂 components
+ ┃ ┣ 📂 services
+ ┃ ┗ 📜 main.js
+ ┣ 📂 tests
+ ┣ 📜 package.json
+ ┗ 📜 README.adoc
+....
+
+== 📦 Instalacja
+
+[source,bash]
+----
+git clone https://github.com/twoj-login/twoj-projekt.git # <1>
+cd twoj-projekt                                          # <2>
+npm install                                              # <3>
+----
+
+<1> Klonuje repozytorium
+<2> Przechodzi do katalogu projektu
+<3> Instaluje zależności
+
+== ▶️ Uruchomienie
+
+[source,bash]
+----
+npm run dev
+----
+
+== ⚙️ Konfiguracja
+
+[source,env]
+----
+PORT=3000
+API_KEY=twoj_klucz_api
+DEBUG=true
+----
+
+TIP: Użyj różnych plików `.env` dla dev/prod.
+
+== 🔌 API – przykład
+
+[source,json]
+----
+{
+  "user": {
+    "id": 1,
+    "name": "Jan"
+  }
+}
+----
+
+== 🧪 Testy
+
+[source,bash]
+----
+npm test
+----
+
+== 📊 Tabela funkcji
+
+[cols="1,1,3", options="header"]
+|===
+| Moduł | Status | Opis
+| Auth | ✅ | Logowanie użytkownika
+| API | 🚧 | W trakcie rozwoju
+| UI | ⚡ | Szybki i responsywny
+|===
+
+== ⚠️ Ważne informacje
+
+WARNING: Projekt jest w fazie rozwoju — API może się zmieniać.
+
+NOTE: Dokumentacja generowana w AsciiDoc.
+
+TIP: Możesz użyć `asciidoctor` do renderowania lokalnie.
+
+== 🧠 Dobre praktyki
+
+* Używaj małych komponentów
+* Testuj kod
+* Dbaj o czytelność
+
+== 🤝 Współpraca
+
+. Fork repozytorium
+. Stwórz branch (`feature/x`)
+. Commit changes
+. Otwórz Pull Request
+
+== 💬 Cytat
+
+[quote, Programista]
+____
+Najlepszy kod to taki, którego nie trzeba pisać drugi raz.
+____
+
+== 📄 Licencja
+
+MIT
+
+== 🧑‍💻 Autor
+
+*Twoje Imię*
+
+* GitHub: https://github.com/twoj-login
+* Email: twoj@email.com
+
+== 🧩 Bonus: Callout w kodzie
+
+[source,js]
+----
+function greet(name) {
+  console.log("Hello " + name); // <1>
+}
+
+greet("World"); // <2>
+----
+
+<1> Wyświetla powitanie
+<2> Wywołanie funkcji
